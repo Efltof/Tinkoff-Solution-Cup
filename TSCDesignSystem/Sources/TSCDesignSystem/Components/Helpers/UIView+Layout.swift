@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 extension UIView {
-    func anchor(top: NSLayoutYAxisAnchor?, paddingTop: CGFloat = 0, bottom: NSLayoutYAxisAnchor?, paddingBottom: CGFloat = 0, left: NSLayoutXAxisAnchor?, paddingLeft: CGFloat = 0, right: NSLayoutXAxisAnchor?, paddingRight: CGFloat = 0, width: CGFloat? = nil, height: CGFloat? = nil) {
+    func anchor(top: NSLayoutYAxisAnchor? = nil, paddingTop: CGFloat = 0, bottom: NSLayoutYAxisAnchor? = nil, paddingBottom: CGFloat = 0, leading: NSLayoutXAxisAnchor? = nil, paddingLeading: CGFloat = 0, trailing: NSLayoutXAxisAnchor? = nil, paddingTrailing: CGFloat = 0, width: CGFloat? = nil, height: CGFloat? = nil, centerY: NSLayoutYAxisAnchor? = nil) {
         translatesAutoresizingMaskIntoConstraints = false
         if let top = top {
             topAnchor.constraint(equalTo: top, constant: paddingTop).isActive = true
@@ -17,11 +17,14 @@ extension UIView {
         if let bottom = bottom {
             bottomAnchor.constraint(equalTo: bottom, constant: -paddingBottom).isActive = true
         }
-        if let right = right {
-            rightAnchor.constraint(equalTo: right, constant: -paddingRight).isActive = true
+        if let right = trailing {
+            rightAnchor.constraint(equalTo: right, constant: -paddingTrailing).isActive = true
         }
-        if let left = left {
-            leftAnchor.constraint(equalTo: left, constant: paddingLeft).isActive = true
+        if let left = leading {
+            leftAnchor.constraint(equalTo: left, constant: paddingLeading).isActive = true
+        }
+        if let centerY = centerY {
+            centerYAnchor.constraint(equalTo: centerY).isActive = true
         }
         if let width = width {
             widthAnchor.constraint(equalToConstant: width).isActive = true

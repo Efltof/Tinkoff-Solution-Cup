@@ -10,20 +10,45 @@ import UIKit
 
 public class TSCHeaderView: TSCBaseView {
     
-    private let background: UIView = {
-        var view = UIView()
+    private let verticalStackView: UIStackView = {
+        var view = UIStackView()
+        view.axis = .vertical
         
         return view
     }()
+    
+    private let labelsStackView: UIStackView = {
+        var view = UIStackView()
+        view.axis = .vertical
+        
+        return view
+    }()
+    
+    private let imageView: UIImageView = {
+        var view = UIImageView()
+        view.contentMode = .scaleAspectFit
+        
+        return view
+    }()
+    
+    private let topContainer = UIView()
     
     private let titleLabel: UILabel = {
-        var view = UILabel()
-        view.translatesAutoresizingMaskIntoConstraints = false
+        var label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.numberOfLines = 1
         
-        return view
+        return label
     }()
     
-    private let subtitleLabel = UILabel()
+    private let subtitleLabel: UILabel = {
+        var label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.numberOfLines = 1
+        
+        return label
+    }()
+    
     private let image = UIImageView()
     private let button = UIButton()
     
@@ -33,16 +58,41 @@ public class TSCHeaderView: TSCBaseView {
         self.configuration = configuration
         
         super.init()
+        
+        initialSetup(with: configuration)
     }
     
     override func setupView() {
-        addSubview(titleLabel)
-//
-//        titleLabel.anchor(
-//            top: topAnchor,
-//            paddingTop: 16,
-//            bottom: <#T##NSLayoutYAxisAnchor?#>,
-//            paddingBottom: <#T##CGFloat#>, left: <#T##NSLayoutXAxisAnchor?#>, paddingLeft: <#T##CGFloat#>, right: <#T##NSLayoutXAxisAnchor?#>, paddingRight: <#T##CGFloat#>, width: <#T##CGFloat#>, height: <#T##CGFloat#>)
+        addSubview(verticalStackView)
+        
+        verticalStackView.anchor(top: topAnchor, bottom: bottomAnchor, leading: leadingAnchor, trailing: trailingAnchor)
+        
+        verticalStackView.addArrangedSubview(topContainer)
+        
+        topContainer.addSubview(labelsStackView)
+
+        labelsStackView.addArrangedSubview(titleLabel)
+        labelsStackView.addArrangedSubview(subtitleLabel)
+        
+        topContainer.addSubview(imageView)
+        
+        labelsStackView.anchor(
+            top: topContainer.topAnchor,
+            bottom: topContainer.bottomAnchor,
+            leading: topContainer.leadingAnchor,
+            trailing: imageView.leadingAnchor,
+            paddingTrailing: Paddings.m
+        )
+        
+        imageView.anchor(
+            top: topContainer.topAnchor,
+            bottom: topContainer.bottomAnchor,
+            trailing: topContainer.trailingAnchor,
+            paddingTrailing: Paddings.m
+        )
+    }
+    
+    private func initialSetup(with configuration: TSCHeaderConfiguration) {
         
     }
     

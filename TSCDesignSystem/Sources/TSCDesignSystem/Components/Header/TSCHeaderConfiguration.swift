@@ -8,9 +8,6 @@
 import Foundation
 import UIKit
 
-typealias ImageResolver = (() -> UIImage)
-typealias Callback = () -> ()
-
 protocol ITSCHeaderViewProtocol: AnyObject {
     func changeTitle(_ title: String)
     func changeSubtitle(_ subtitle: String?)
@@ -19,8 +16,15 @@ protocol ITSCHeaderViewProtocol: AnyObject {
 
 public class TSCHeaderConfiguration {
     
+    enum Style {
+        case `default`
+        case inactive
+    }
+    
     weak var view: ITSCHeaderViewProtocol?
     
+    var style: Style
+
     var title: String {
         didSet {
             view?.changeTitle(title)
@@ -33,13 +37,14 @@ public class TSCHeaderConfiguration {
         }
     }
     
-    var imageResolver: ImageResolver?
-    var action: Callback?
+    var imageResolver: IImageLoader?
+    var action: (() -> Void)?
     
-    init(title: String,
+    init(style: Style? = .default,
+         title: String,
          subtitle: String? = nil,
-         imageResolver: ImageResolver?,
-         action: Callback?) {
+         imageResolver: IImageLoader?,
+         action: (() -> Void)?) {
         self.title = title
         self.subtitle = subtitle
         self.imageResolver = imageResolver
