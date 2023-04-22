@@ -8,10 +8,6 @@
 import Foundation
 import UIKit
 
-
-
-
-
 public class TSCHeaderView: TSCBaseView {
     
     private let background: UIView = {
