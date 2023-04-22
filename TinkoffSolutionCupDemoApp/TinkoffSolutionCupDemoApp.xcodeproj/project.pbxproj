@@ -9,13 +9,15 @@
 /* Begin PBXBuildFile section */
 		0A416E6929F3E10B008F1414 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A416E6829F3E10B008F1414 /* AppDelegate.swift */; };
 		0A416E6B29F3E10B008F1414 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A416E6A29F3E10B008F1414 /* SceneDelegate.swift */; };
-		0A416E6D29F3E10B008F1414 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A416E6C29F3E10B008F1414 /* ViewController.swift */; };
+		0A416E6D29F3E10B008F1414 /* ComponentsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A416E6C29F3E10B008F1414 /* ComponentsListViewController.swift */; };
 		0A416E7029F3E10B008F1414 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A416E6E29F3E10B008F1414 /* Main.storyboard */; };
 		0A416E7229F3E10C008F1414 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A416E7129F3E10C008F1414 /* Assets.xcassets */; };
 		0A416E7529F3E10C008F1414 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A416E7329F3E10C008F1414 /* LaunchScreen.storyboard */; };
 		0A416E8029F3E10C008F1414 /* TinkoffSolutionCupDemoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A416E7F29F3E10C008F1414 /* TinkoffSolutionCupDemoAppTests.swift */; };
 		0A416E8A29F3E10C008F1414 /* TinkoffSolutionCupDemoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A416E8929F3E10C008F1414 /* TinkoffSolutionCupDemoAppUITests.swift */; };
 		0A416E8C29F3E10C008F1414 /* TinkoffSolutionCupDemoAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A416E8B29F3E10C008F1414 /* TinkoffSolutionCupDemoAppUITestsLaunchTests.swift */; };
+		0A93FDC529F3E6830009AD29 /* TSCDesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = 0A93FDC429F3E6830009AD29 /* TSCDesignSystem */; };
+		0A93FDC729F3EC5C0009AD29 /* ComponentsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A93FDC629F3EC5C0009AD29 /* ComponentsRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +41,7 @@
 		0A416E6529F3E10B008F1414 /* TinkoffSolutionCupDemoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinkoffSolutionCupDemoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A416E6829F3E10B008F1414 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0A416E6A29F3E10B008F1414 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		0A416E6C29F3E10B008F1414 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0A416E6C29F3E10B008F1414 /* ComponentsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentsListViewController.swift; sourceTree = "<group>"; };
 		0A416E6F29F3E10B008F1414 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0A416E7129F3E10C008F1414 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A416E7429F3E10C008F1414 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -50,6 +52,8 @@
 		0A416E8929F3E10C008F1414 /* TinkoffSolutionCupDemoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinkoffSolutionCupDemoAppUITests.swift; sourceTree = "<group>"; };
 		0A416E8B29F3E10C008F1414 /* TinkoffSolutionCupDemoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinkoffSolutionCupDemoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		0A416E9829F3E1F0008F1414 /* TSCDesignSystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = TSCDesignSystem; path = ../TSCDesignSystem; sourceTree = "<group>"; };
+		0A93FDC229F3E6670009AD29 /* TSCDesignSystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = TSCDesignSystem; path = ../TSCDesignSystem; sourceTree = "<group>"; };
+		0A93FDC629F3EC5C0009AD29 /* ComponentsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentsRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A93FDC529F3E6830009AD29 /* TSCDesignSystem in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,11 +85,13 @@
 		0A416E5C29F3E10B008F1414 = {
 			isa = PBXGroup;
 			children = (
+				0A93FDC129F3E6670009AD29 /* Packages */,
 				0A416E9829F3E1F0008F1414 /* TSCDesignSystem */,
 				0A416E6729F3E10B008F1414 /* TinkoffSolutionCupDemoApp */,
 				0A416E7E29F3E10C008F1414 /* TinkoffSolutionCupDemoAppTests */,
 				0A416E8829F3E10C008F1414 /* TinkoffSolutionCupDemoAppUITests */,
 				0A416E6629F3E10B008F1414 /* Products */,
+				0A93FDC329F3E6830009AD29 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,11 +110,12 @@
 			children = (
 				0A416E6829F3E10B008F1414 /* AppDelegate.swift */,
 				0A416E6A29F3E10B008F1414 /* SceneDelegate.swift */,
-				0A416E6C29F3E10B008F1414 /* ViewController.swift */,
+				0A416E6C29F3E10B008F1414 /* ComponentsListViewController.swift */,
 				0A416E6E29F3E10B008F1414 /* Main.storyboard */,
 				0A416E7129F3E10C008F1414 /* Assets.xcassets */,
 				0A416E7329F3E10C008F1414 /* LaunchScreen.storyboard */,
 				0A416E7629F3E10C008F1414 /* Info.plist */,
+				0A93FDC629F3EC5C0009AD29 /* ComponentsRouter.swift */,
 			);
 			path = TinkoffSolutionCupDemoApp;
 			sourceTree = "<group>";
@@ -129,6 +137,21 @@
 			path = TinkoffSolutionCupDemoAppUITests;
 			sourceTree = "<group>";
 		};
+		0A93FDC129F3E6670009AD29 /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+				0A93FDC229F3E6670009AD29 /* TSCDesignSystem */,
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
+		0A93FDC329F3E6830009AD29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,6 +168,9 @@
 			dependencies = (
 			);
 			name = TinkoffSolutionCupDemoApp;
+			packageProductDependencies = (
+				0A93FDC429F3E6830009AD29 /* TSCDesignSystem */,
+			);
 			productName = TinkoffSolutionCupDemoApp;
 			productReference = 0A416E6529F3E10B008F1414 /* TinkoffSolutionCupDemoApp.app */;
 			productType = "com.apple.product-type.application";
@@ -260,7 +286,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A416E6D29F3E10B008F1414 /* ViewController.swift in Sources */,
+				0A93FDC729F3EC5C0009AD29 /* ComponentsRouter.swift in Sources */,
+				0A416E6D29F3E10B008F1414 /* ComponentsListViewController.swift in Sources */,
 				0A416E6929F3E10B008F1414 /* AppDelegate.swift in Sources */,
 				0A416E6B29F3E10B008F1414 /* SceneDelegate.swift in Sources */,
 			);
@@ -606,6 +633,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0A93FDC429F3E6830009AD29 /* TSCDesignSystem */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = TSCDesignSystem;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0A416E5D29F3E10B008F1414 /* Project object */;
 }
