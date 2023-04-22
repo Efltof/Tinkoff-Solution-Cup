@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-public class TSCHeaderView: TSCBaseView {
+public class TSCHeaderView: TSCBaseView, ITSCHeaderView {
     
     private let verticalStackView: UIStackView = {
         var view = UIStackView()
@@ -54,12 +54,12 @@ public class TSCHeaderView: TSCBaseView {
     
     let configuration: TSCHeaderConfiguration
 
-    init(configuration: TSCHeaderConfiguration) {
+    public init(configuration: TSCHeaderConfiguration) {
         self.configuration = configuration
         
         super.init()
         
-        initialSetup(with: configuration)
+        configuration.view = self
     }
     
     override func setupView() {
@@ -92,11 +92,29 @@ public class TSCHeaderView: TSCBaseView {
         )
     }
     
-    private func initialSetup(with configuration: TSCHeaderConfiguration) {
-        
-    }
-    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    //MARK: - ITSCHeaderView
+    
+    func changeTitle(_ title: String) {
+        titleLabel.text = title
+    }
+    
+    func changeTitleFont(_ font: UIFont) {
+        titleLabel.font = font
+    }
+    
+    func changeSubtitle(_ subtitle: String?) {
+        subtitleLabel.text = subtitle
+    }
+    
+    func changeSubtitleFont(_ font: UIFont) {
+        subtitleLabel.font = font
+    }
+    
+    func setImage(image: UIImage) {
+        imageView.image = image
     }
 }

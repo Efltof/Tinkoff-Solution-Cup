@@ -8,6 +8,6 @@
 import Foundation
 import UIKit
 
-protocol IImageLoader {
-    func loadImage(completion: @escaping () -> UIImage?)
+public protocol IImageLoader {
+    func loadImage(completion: @escaping (UIImage) -> Void)
 }

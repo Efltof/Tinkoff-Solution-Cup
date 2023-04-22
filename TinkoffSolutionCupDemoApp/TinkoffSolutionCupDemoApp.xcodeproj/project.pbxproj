@@ -18,6 +18,7 @@
 		0A93FDC529F3E6830009AD29 /* TSCDesignSystem in Frameworks */ = {isa = PBXBuildFile; productRef = 0A93FDC429F3E6830009AD29 /* TSCDesignSystem */; };
 		0A93FDC729F3EC5C0009AD29 /* ComponentsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A93FDC629F3EC5C0009AD29 /* ComponentsRouter.swift */; };
 		0A93FDC929F40DB80009AD29 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A93FDC829F40DB80009AD29 /* UIView+Layout.swift */; };
+		0A93FDCC29F4102E0009AD29 /* HeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A93FDCB29F4102E0009AD29 /* HeaderViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		0A93FDC229F3E6670009AD29 /* TSCDesignSystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = TSCDesignSystem; path = ../TSCDesignSystem; sourceTree = "<group>"; };
 		0A93FDC629F3EC5C0009AD29 /* ComponentsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComponentsRouter.swift; sourceTree = "<group>"; };
 		0A93FDC829F40DB80009AD29 /* UIView+Layout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Layout.swift"; sourceTree = "<group>"; };
+		0A93FDCB29F4102E0009AD29 /* HeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +110,7 @@
 		0A416E6729F3E10B008F1414 /* TinkoffSolutionCupDemoApp */ = {
 			isa = PBXGroup;
 			children = (
+				0A93FDCA29F410220009AD29 /* Screens */,
 				0A416E6829F3E10B008F1414 /* AppDelegate.swift */,
 				0A416E6A29F3E10B008F1414 /* SceneDelegate.swift */,
 				0A416E6C29F3E10B008F1414 /* ComponentsListViewController.swift */,
@@ -150,6 +153,14 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0A93FDCA29F410220009AD29 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				0A93FDCB29F4102E0009AD29 /* HeaderViewController.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,6 +300,7 @@
 				0A416E6D29F3E10B008F1414 /* ComponentsListViewController.swift in Sources */,
 				0A416E6929F3E10B008F1414 /* AppDelegate.swift in Sources */,
 				0A416E6B29F3E10B008F1414 /* SceneDelegate.swift in Sources */,
+				0A93FDCC29F4102E0009AD29 /* HeaderViewController.swift in Sources */,
 				0A93FDC929F40DB80009AD29 /* UIView+Layout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
