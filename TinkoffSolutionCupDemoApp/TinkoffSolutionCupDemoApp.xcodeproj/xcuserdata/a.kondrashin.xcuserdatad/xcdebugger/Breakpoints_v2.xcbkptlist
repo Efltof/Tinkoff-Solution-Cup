@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "D6BB5375-DE9E-4CD7-96FF-79E35F00C5E3"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "030405B6-8246-4466-A2F4-A8E806132F59"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TinkoffSolutionCupDemoApp/ComponentsListViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9C8851B7-1E9B-42AE-8F02-321A19BB24FB"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TinkoffSolutionCupDemoApp/ComponentsListViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "76"
+            endingLineNumber = "76"
+            landmarkName = "tableView(_:cellForRowAt:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "A61ACC58-FBEC-4289-9B7D-211F72AF925E"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TinkoffSolutionCupDemoApp/ComponentsListViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "65"
+            endingLineNumber = "65"
+            landmarkName = "tableView(_:numberOfRowsInSection:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "8DA46115-1E6C-4022-9348-DF895EE13596"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "TinkoffSolutionCupDemoApp/ComponentsListViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "ComponentsListViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "8DA46115-1E6C-4022-9348-DF895EE13596 - bee6c6afff15ec89"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TinkoffSolutionCupDemoApp.ComponentsListViewController.__allocating_init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;TinkoffSolutionCupDemoApp.ComponentsListViewController&gt;"
+                  moduleName = "TinkoffSolutionCupDemoApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/a.kondrashin/build/Tinkoff-Solution-Cup/TinkoffSolutionCupDemoApp/TinkoffSolutionCupDemoApp/ComponentsListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "20">
+               </Location>
+               <Location
+                  uuid = "8DA46115-1E6C-4022-9348-DF895EE13596 - 285e9db4c6f58993"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "TinkoffSolutionCupDemoApp.ComponentsListViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;TinkoffSolutionCupDemoApp.ComponentsListViewController&gt;"
+                  moduleName = "TinkoffSolutionCupDemoApp"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/a.kondrashin/build/Tinkoff-Solution-Cup/TinkoffSolutionCupDemoApp/TinkoffSolutionCupDemoApp/ComponentsListViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "96">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

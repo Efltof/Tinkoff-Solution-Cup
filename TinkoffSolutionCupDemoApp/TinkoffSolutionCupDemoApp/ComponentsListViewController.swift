@@ -21,7 +21,7 @@ class ComponentsListViewController: UINavigationController {
     init(router: IComponentsRouter) {
         self.router = router
         
-        super.init()
+        super.init(nibName: nil, bundle: nil)
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -30,16 +30,28 @@ class ComponentsListViewController: UINavigationController {
     
     private let tableView: UITableView = {
         var view = UITableView()
-        
             
         return view
     }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        view.backgroundColor = .systemBackground
         // Do any additional setup after loading the view.
         tableView.delegate = self
         tableView.dataSource = self
+        
+        view.addSubview(tableView)
+        
+        tableView.anchor(
+            top: view.topAnchor,
+            bottom: view.bottomAnchor,
+            leading: view.leadingAnchor,
+            trailing: view.trailingAnchor
+        )
+        
+        tableView.contentInset = UIEdgeInsets(top: 108, left: 0, bottom: 0, right: 0)
     }
 }
 
@@ -69,4 +81,12 @@ extension ComponentsListViewController: UITableViewDataSource, UITableViewDelega
         router.showComponent(component)
     }
 }
+                         
+                         
+                         
+                    
+                         
+                         
+                         
+
 
