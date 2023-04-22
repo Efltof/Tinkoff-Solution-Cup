@@ -88,10 +88,8 @@ public class TSCHeaderView: TSCBaseView, ITSCHeaderView {
         topContainer.addSubview(labelsStackView)
 
         labelsStackView.addArrangedSubview(titleLabel)
-        titleLabel.anchor(height: 24)
         
         labelsStackView.addArrangedSubview(subtitleLabel)
-        subtitleLabel.anchor(height: 18)
         
         topContainer.addSubview(imageView)
         
