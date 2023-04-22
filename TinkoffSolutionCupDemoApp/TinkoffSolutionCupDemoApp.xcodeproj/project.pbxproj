@@ -49,6 +49,7 @@
 		0A416E8529F3E10C008F1414 /* TinkoffSolutionCupDemoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TinkoffSolutionCupDemoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A416E8929F3E10C008F1414 /* TinkoffSolutionCupDemoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinkoffSolutionCupDemoAppUITests.swift; sourceTree = "<group>"; };
 		0A416E8B29F3E10C008F1414 /* TinkoffSolutionCupDemoAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinkoffSolutionCupDemoAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0A416E9829F3E1F0008F1414 /* TSCDesignSystem */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = TSCDesignSystem; path = ../TSCDesignSystem; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +80,7 @@
 		0A416E5C29F3E10B008F1414 = {
 			isa = PBXGroup;
 			children = (
+				0A416E9829F3E1F0008F1414 /* TSCDesignSystem */,
 				0A416E6729F3E10B008F1414 /* TinkoffSolutionCupDemoApp */,
 				0A416E7E29F3E10C008F1414 /* TinkoffSolutionCupDemoAppTests */,
 				0A416E8829F3E10C008F1414 /* TinkoffSolutionCupDemoAppUITests */,
@@ -445,6 +447,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -473,6 +476,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
