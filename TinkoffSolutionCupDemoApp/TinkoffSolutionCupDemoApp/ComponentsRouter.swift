@@ -14,7 +14,7 @@ protocol IComponentsRouter {
 
 class ComponentsRouter: IComponentsRouter {
 
-    weak private let controller: UINavigationController
+    weak private var controller: UINavigationController?
     
     init(controller: UINavigationController) {
         self.controller = controller

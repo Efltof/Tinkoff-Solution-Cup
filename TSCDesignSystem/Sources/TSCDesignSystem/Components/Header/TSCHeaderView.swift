@@ -10,7 +10,15 @@ import UIKit
 
 
 
+
+
 public class TSCHeaderView: TSCBaseView {
+    
+    private let background: UIView = {
+        var view = UIView()
+        
+        return view
+    }()
     
     private let titleLabel: UILabel = {
         var view = UILabel()
@@ -33,8 +41,12 @@ public class TSCHeaderView: TSCBaseView {
     
     override func setupView() {
         addSubview(titleLabel)
-        
-        titleLabel.topAnchor.constraint(equalTo: <#T##NSLayoutAnchor<NSLayoutYAxisAnchor>#>)
+//
+//        titleLabel.anchor(
+//            top: topAnchor,
+//            paddingTop: 16,
+//            bottom: <#T##NSLayoutYAxisAnchor?#>,
+//            paddingBottom: <#T##CGFloat#>, left: <#T##NSLayoutXAxisAnchor?#>, paddingLeft: <#T##CGFloat#>, right: <#T##NSLayoutXAxisAnchor?#>, paddingRight: <#T##CGFloat#>, width: <#T##CGFloat#>, height: <#T##CGFloat#>)
         
     }
     
