@@ -62,58 +62,10 @@
             filePath = "../TSCDesignSystem/Sources/TSCDesignSystem/Components/Header/TSCHeaderView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "135"
-            endingLineNumber = "135"
+            startingLineNumber = "143"
+            endingLineNumber = "143"
             landmarkName = "setImage(image:)"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "00200331-6D54-4983-9F18-DA8BADD407B8"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "../TSCDesignSystem/Sources/TSCDesignSystem/Components/Core/TSC.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "16"
-            endingLineNumber = "16"
-            landmarkName = "Image"
-            landmarkType = "14">
-            <Locations>
-               <Location
-                  uuid = "00200331-6D54-4983-9F18-DA8BADD407B8 - f9bbf4500b049314"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "one-time initialization function for star"
-                  moduleName = "TinkoffSolutionCupDemoApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/a.kondrashin/build/Tinkoff-Solution-Cup/TSCDesignSystem/Sources/TSCDesignSystem/Components/Core/TSC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "16">
-               </Location>
-               <Location
-                  uuid = "00200331-6D54-4983-9F18-DA8BADD407B8 - da7e9d1e2bec4471"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "TSCDesignSystem.TSC.Image.star.unsafeMutableAddressor : Swift.Optional&lt;__C.UIImage&gt;"
-                  moduleName = "TinkoffSolutionCupDemoApp"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/a.kondrashin/build/Tinkoff-Solution-Cup/TSCDesignSystem/Sources/TSCDesignSystem/Components/Core/TSC.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "16"
-                  endingLineNumber = "16"
-                  offsetFromSymbolStart = "16">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

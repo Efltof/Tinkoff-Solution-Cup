@@ -38,6 +38,7 @@ public class TSCHeaderView: TSCBaseView, ITSCHeaderView {
         var label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.numberOfLines = 1
+        label.setContentHuggingPriority(.defaultHigh, for: .vertical)
         
         return label
     }()
@@ -45,7 +46,9 @@ public class TSCHeaderView: TSCBaseView, ITSCHeaderView {
     private let subtitleLabel: UILabel = {
         var label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = TSC.Color.secondary
         label.numberOfLines = 1
+        label.setContentHuggingPriority(.defaultHigh, for: .vertical)
         
         return label
     }()
@@ -67,7 +70,6 @@ public class TSCHeaderView: TSCBaseView, ITSCHeaderView {
         backgroundColor = .systemBackground
         layer.cornerRadius = 24
         
-        
         addSubview(verticalStackView)
         
         verticalStackView.anchor(
@@ -86,10 +88,10 @@ public class TSCHeaderView: TSCBaseView, ITSCHeaderView {
         topContainer.addSubview(labelsStackView)
 
         labelsStackView.addArrangedSubview(titleLabel)
-        titleLabel.anchor(minimalHeight: 24)
+        titleLabel.anchor(height: 24)
         
         labelsStackView.addArrangedSubview(subtitleLabel)
-        subtitleLabel.anchor(minimalHeight: 18)
+        subtitleLabel.anchor(height: 18)
         
         topContainer.addSubview(imageView)
         
@@ -103,6 +105,7 @@ public class TSCHeaderView: TSCBaseView, ITSCHeaderView {
         
         imageView.anchor(
             top: topContainer.topAnchor,
+            bottom: topContainer.bottomAnchor,
             trailing: topContainer.trailingAnchor,
             width: 40,
             height: 40
@@ -124,7 +127,12 @@ public class TSCHeaderView: TSCBaseView, ITSCHeaderView {
     }
     
     func changeSubtitle(_ subtitle: String?) {
-        subtitleLabel.text = subtitle
+        if let subtitle = subtitle {
+            subtitleLabel.text = subtitle
+            subtitleLabel.isHidden = false
+        } else {
+            subtitleLabel.isHidden = true
+        }
     }
     
     func changeSubtitleFont(_ font: UIFont) {

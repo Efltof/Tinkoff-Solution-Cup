@@ -14,9 +14,18 @@ class HeaderViewController: UIViewController {
     private let defaultHeader: TSCHeaderView = {
         let config = TSCHeaderConfiguration(
             title: "Header",
-            titleFont: .title,
             subtitle: "subtitle",
-            subtitleFont: .secondarySubtitle,
+            imageResolver: nil,
+            defaultImage: TSC.Image.star
+        )
+        let header = TSCHeaderView(configuration: config)
+        
+        return header
+    }()
+    
+    private let defaultHeaderWithoutSubtitle: TSCHeaderView = {
+        let config = TSCHeaderConfiguration(
+            title: "Header",
             imageResolver: nil,
             defaultImage: TSC.Image.star
         )
@@ -30,24 +39,19 @@ class HeaderViewController: UIViewController {
         
         view.addSubview(defaultHeader)
         defaultHeader.anchor(
+            top: view.topAnchor,
+            paddingTop: 150,
             width: 343,
-            height: 84,
             centerX: view.centerXAnchor,
             centerY: view.centerYAnchor
         )
-    }
-}
-
-extension UIFont {
     
-    static let title = bold(size: 20)
-    static let secondarySubtitle = regular(size: 15)
-    
-    private static func bold(size: CGFloat) -> UIFont {
-        .boldSystemFont(ofSize: size)
-    }
-    
-    private static func regular(size: CGFloat) -> UIFont {
-        .systemFont(ofSize: size)
+        view.addSubview(defaultHeaderWithoutSubtitle)
+        defaultHeaderWithoutSubtitle.anchor(
+            top: defaultHeader.bottomAnchor,
+            paddingTop: 50,
+            width: 343,
+            centerX: view.centerXAnchor
+        )
     }
 }

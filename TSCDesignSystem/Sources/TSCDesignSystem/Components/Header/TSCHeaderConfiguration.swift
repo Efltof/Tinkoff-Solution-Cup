@@ -77,9 +77,9 @@ public class TSCHeaderConfiguration {
     public init(
         style: Style = .default,
         title: String,
-        titleFont: UIFont,
+        titleFont: UIFont = .TSCTitle,
         subtitle: String? = nil,
-        subtitleFont: UIFont,
+        subtitleFont: UIFont = .TSCsecondarySubtitle,
         imageResolver: IImageLoader?,
         defaultImage: UIImage?,
         action: (() -> Void)? = nil) {
