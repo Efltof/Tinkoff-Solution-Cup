@@ -9,7 +9,7 @@ import Foundation
 import UIKit
 
 extension UIView {
-    func anchor(top: NSLayoutYAxisAnchor? = nil, paddingTop: CGFloat = 0, bottom: NSLayoutYAxisAnchor? = nil, paddingBottom: CGFloat = 0, leading: NSLayoutXAxisAnchor? = nil, paddingLeading: CGFloat = 0, trailing: NSLayoutXAxisAnchor? = nil, paddingTrailing: CGFloat = 0, width: CGFloat? = nil, height: CGFloat? = nil, centerY: NSLayoutYAxisAnchor? = nil) {
+    func anchor(top: NSLayoutYAxisAnchor? = nil, paddingTop: CGFloat = 0, bottom: NSLayoutYAxisAnchor? = nil, paddingBottom: CGFloat = 0, leading: NSLayoutXAxisAnchor? = nil, paddingLeading: CGFloat = 0, trailing: NSLayoutXAxisAnchor? = nil, paddingTrailing: CGFloat = 0, width: CGFloat? = nil, height: CGFloat? = nil, centerX: NSLayoutXAxisAnchor? = nil, centerY: NSLayoutYAxisAnchor? = nil) {
         translatesAutoresizingMaskIntoConstraints = false
         if let top = top {
             topAnchor.constraint(equalTo: top, constant: paddingTop).isActive = true
@@ -23,6 +23,11 @@ extension UIView {
         if let leading = leading {
             leadingAnchor.constraint(equalTo: leading, constant: paddingLeading).isActive = true
         }
+        
+        if let centerX = centerX {
+            centerXAnchor.constraint(equalTo: centerX).isActive = true
+        }
+        
         if let centerY = centerY {
             centerYAnchor.constraint(equalTo: centerY).isActive = true
         }

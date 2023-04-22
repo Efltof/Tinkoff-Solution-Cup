@@ -6,11 +6,13 @@
 //
 
 import Foundation
-
+import UIKit
 
 public struct TSC {
     
-    struct Shadow {
-        var radious: CGFloat
+    public init() {}
+    
+    public struct Image {
+        public static let star = UIImage(named: "star")
     }
 }

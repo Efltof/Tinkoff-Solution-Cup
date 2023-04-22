@@ -19,12 +19,13 @@ class ComponentsRouter: IComponentsRouter {
     
     func showComponent(_ component: Component) {
         switch component {
-        case .header: break
-            
+        case .header:
+            showHeader()
         }
     }
     
     private func showHeader() {
-        
+        let vc = HeaderViewController()
+        delegate?.present(vc, animated: true)
     }
 }

@@ -20,6 +20,7 @@ public class TSCHeaderView: TSCBaseView, ITSCHeaderView {
     private let labelsStackView: UIStackView = {
         var view = UIStackView()
         view.axis = .vertical
+        view.spacing = Constants.Paddings.s
         
         return view
     }()
@@ -57,22 +58,38 @@ public class TSCHeaderView: TSCBaseView, ITSCHeaderView {
     public init(configuration: TSCHeaderConfiguration) {
         self.configuration = configuration
         
-        super.init()
+        super.init(frame: .zero)
         
         configuration.view = self
     }
     
     override func setupView() {
+        backgroundColor = .systemBackground
+        layer.cornerRadius = 24
+        
+        
         addSubview(verticalStackView)
         
-        verticalStackView.anchor(top: topAnchor, bottom: bottomAnchor, leading: leadingAnchor, trailing: trailingAnchor)
+        verticalStackView.anchor(
+            top: topAnchor,
+            paddingTop: Constants.Paddings.m,
+            bottom: bottomAnchor,
+            paddingBottom: Constants.Paddings.m,
+            leading: leadingAnchor,
+            paddingLeading: Constants.Paddings.l,
+            trailing: trailingAnchor,
+            paddingTrailing: Constants.Paddings.l
+        )
         
         verticalStackView.addArrangedSubview(topContainer)
         
         topContainer.addSubview(labelsStackView)
 
         labelsStackView.addArrangedSubview(titleLabel)
+        titleLabel.anchor(minimalHeight: 24)
+        
         labelsStackView.addArrangedSubview(subtitleLabel)
+        subtitleLabel.anchor(minimalHeight: 18)
         
         topContainer.addSubview(imageView)
         
@@ -81,14 +98,14 @@ public class TSCHeaderView: TSCBaseView, ITSCHeaderView {
             bottom: topContainer.bottomAnchor,
             leading: topContainer.leadingAnchor,
             trailing: imageView.leadingAnchor,
-            paddingTrailing: Paddings.m
+            paddingTrailing: Constants.Paddings.m
         )
         
         imageView.anchor(
             top: topContainer.topAnchor,
-            bottom: topContainer.bottomAnchor,
             trailing: topContainer.trailingAnchor,
-            paddingTrailing: Paddings.m
+            width: 40,
+            height: 40
         )
     }
     
