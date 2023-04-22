@@ -9,18 +9,25 @@ import Foundation
 import UIKit
 
 protocol IComponentsRouter {
-    func showHeader()
+    func showComponent(_ component: Component)
 }
 
 class ComponentsRouter: IComponentsRouter {
 
-    weak private var controller: UINavigationController?
+    private weak var delegate: UINavigationController?
     
     init(controller: UINavigationController) {
-        self.controller = controller
+        self.delegate = controller
     }
     
-    func showHeader() {
+    func showComponent(_ component: Component) {
+        switch component {
+        case .header: break
+            
+        }
+    }
+    
+    private func showHeader() {
         
     }
 }

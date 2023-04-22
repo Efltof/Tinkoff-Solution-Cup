@@ -40,11 +40,12 @@ public class TSCHeaderConfiguration {
     var imageResolver: IImageLoader?
     var action: (() -> Void)?
     
-    init(style: Style? = .default,
+    init(style: Style = .default,
          title: String,
          subtitle: String? = nil,
          imageResolver: IImageLoader?,
          action: (() -> Void)?) {
+        self.style = style
         self.title = title
         self.subtitle = subtitle
         self.imageResolver = imageResolver
